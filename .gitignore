@@ -1,0 +1,12 @@
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# Python環境・キャッシュ（北澤さん用）
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# VSCode個人設定
+.vscode/
