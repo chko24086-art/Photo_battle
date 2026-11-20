@@ -1,0 +1,74 @@
+[
+  {
+    "id": "card_001",
+    "name": "路地裏の黒猫",
+    "type": "striker",
+    "cost": 1,
+    "strike": 1,
+    "power": 2,
+    "traits": ["動物", "闇"],
+    "imageUrl": "assets/sample_cat.jpg",
+    "flavorText": "夕暮れの路地を音もなく駆け抜ける小さな影。",
+    "effect": {
+      "trigger": "on_summon",
+      "action": "draw",
+      "value": 1,
+      "description": "【出撃時】山札からカードを1枚引く。"
+    }
+  },
+  {
+    "id": "card_002",
+    "name": "朝焼けの鉄塔",
+    "type": "striker",
+    "cost": 3,
+    "strike": 2,
+    "power": 4,
+    "traits": ["建物", "光"],
+    "imageUrl": "assets/sample_tower.jpg",
+    "flavorText": "朝日を浴びて赤く染まる巨大な鉄の巨人。",
+    "effect": null
+  },
+  {
+    "id": "card_003",
+    "name": "街角のバリスタ",
+    "type": "supporter",
+    "cost": 2,
+    "traits": ["人間", "炎"],
+    "imageUrl": "assets/sample_coffee.jpg",
+    "flavorText": "一杯のコーヒーが、戦う者に新たな活力を与える。",
+    "effect": null,
+    "supportCost": 1,
+    "supportEffect": {
+      "action": "gain_energy",
+      "value": 1,
+      "description": "【起動（コスト1）】自分のエネルギーを1回復する。"
+    }
+  },
+  {
+    "id": "card_004",
+    "name": "夕焼けの閃光",
+    "type": "magic",
+    "cost": 2,
+    "imageUrl": "assets/sample_sunset.jpg",
+    "flavorText": "空を焦がすほどの輝きが、立ちはだかる壁を焼き払う。",
+    "effect": {
+      "action": "damage_striker",
+      "target": "opponent_striker",
+      "value": 3,
+      "description": "相手のストライカー1体に3ダメージを与え、パワーが0以下になったら破壊する。"
+    }
+  },
+  {
+    "id": "card_005",
+    "name": "古びた一眼レフ",
+    "type": "equip",
+    "cost": 1,
+    "imageUrl": "assets/sample_camera.jpg",
+    "flavorText": "レンズ越しに見据えた標的は決して逃さない。",
+    "effect": {
+      "action": "buff_power",
+      "value": 2,
+      "description": "装備したストライカーのパワーを+2する。"
+    }
+  }
+]
